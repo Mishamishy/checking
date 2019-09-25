@@ -1,0 +1,46 @@
+.partners
+    margin-top: 85px
+    margin-bottom: 100px
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+    &__info
+        text-align: center
+    &__name
+        max-width: 136px
+        font-size: 12px
+        margin-top: 25px
+        line-height: normal
+        @include font-bold
+    &__title
+        font-size: 24px
+        color: $black-color
+        margin-bottom: 30px
+        text-align: center
+@media (max-width: 864px)
+ .partners
+    margin-top: 85px
+    margin-bottom: 85px
+    &__list
+        display: flex
+        justify-content: space-between
+        align-items: baseline
+        flex-wrap: wrap
+    &__info
+        text-align: center
+        flex-basis: 33%
+    &__name
+        max-width: 136px
+        font-size: 12px
+        margin: 25px auto 15px
+        line-height: normal
+        @include font-bold
+    &__title
+        font-size: 24px
+        color: $black-color
+        margin-bottom: 30px
+        text-align: center
+@media (max-width: 520px)
+ .partners
+        margin: 40px 0

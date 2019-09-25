@@ -1,0 +1,129 @@
+@media (max-width: 520px) //At this breakpoint main = display: none | and main-small = display : block
+    .main
+        display: none
+        &-small
+            display: block
+    //main-small
+    //Accordeon block
+    .rotate
+        &::after
+            transform: rotate(180deg)
+    .accordeon
+        a
+            &:active
+                background-color: #fff
+                outline-color: #ffffff
+        position: relative
+        border-bottom: 1px dotted $main-color
+        &__head
+            height: 60px
+            line-height: 60px
+            outline: 0
+        &__title
+            font-size: 15px
+            color: $main-color
+            margin-left: 60px
+            width: 100%
+            cursor: pointer
+            border-bottom: 1px dotted $main-color
+            &:after
+                content: '▼'
+                font-size: 10px
+                position: absolute
+                right: 20px
+                transition: .2s
+            &:before
+                content: ''
+                display: inline-block
+                background: url(../../img/main-small/1.png) no-repeat
+                width: 35px
+                height: 35px
+                position: absolute
+                left: 20px
+                top: 13px
+        &__text
+            &-wrap
+                display: none
+                max-width: 490px
+                width: 100%
+    //Paying styles
+    .paying
+        margin-bottom: 30px
+        &__title
+            font-size: 21px
+            margin-top: 30px
+    //Fee's styles
+    .fee
+        &__title
+            &:before
+                background: url(../../img/main-small/2.png) no-repeat
+    //Credit's styles
+    .credit
+        margin: 0
+        &__title
+            &:before
+                background: url(../../img/main-small/3.png) no-repeat
+        &-wrap
+            display: flex
+            align-items: center
+            justify-content: center
+        &__info
+            margin: 0 0 70px 0
+        &__text
+            max-width: 390px
+            font-size: 15px
+            line-height: 1.3
+            &-width
+                width: 100%
+                max-width: 390px
+                margin-bottom: 45px 
+    //Taxes styles
+    .tax
+        &__title
+            &:before
+                background: url(../../img/main-small/4.png) no-repeat
+    //Sevices styles
+    .services
+        margin: 0
+        &__title
+            &:before
+                background: url(../../img/main-small/5.png) no-repeat
+        &__text
+            &-width
+                max-width: 490px
+                width: 100%
+    .partners
+        &__list
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            lex-wrap: wrap
+        &__info
+            text-align: center
+            flex-basis: 48%
+@media (max-width: 375px)
+    .paying
+        margin: 0
+        &__title
+            font-size: 17px
+            margin: 20px auto 
+@media (max-width: 320px)
+    .partners
+        margin-top: 10px
+        margin-bottom: 10px
+        &__list
+            display: flex
+            justify-content: space-between
+            align-items: baseline
+            flex-wrap: wrap
+        &__info
+            text-align: center
+            flex-basis: 48%
+            margin-top: 20px
+        &__name
+            font-size: 10px
+            margin: 5px auto 15px
+        &__title
+            font-size: 17px
+            margin-bottom: -15px
+

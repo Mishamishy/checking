@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>This is site title</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700&display=swap&subset=cyrillic"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header class="header__top-bar">
+        <button class="button header__btn">Войти</button>
+        <object class="header__logo" type="image/svg+xml" data="img/header/title.svg">
+            <img src="img/header/title.svg" alt="Title">
+        </object>
+        <a href='#' class="header__help">Помощь</a>
+        <div class="header__burger"></div>
+    </header>
+    <section class="header__main-bar">
+        <div class="header__main-bar-wrap">
+            <div class="container">
+                <div class="header__title">Поиск начислений</div>
+                <div class="header__find">
+                    <input type="text" class="header__input" placeholder="Введите данные для поиска">
+                    <button class="header__btn-red">Найти</button>
+                    <a href="#" class="header__find-icon"></a>
+                </div>
+                <small class="header__advice">Чем больше параметров введено, тем полнее результаты поиска</small>
+            </div>
+        </div>
+        <div class="header__popup">
+            <div class="header__popup-items">
+                <a href="#" class="header__popup-item">Как это работает</a>
+                <a href="#" class="header__popup-item">Вопрос-ответ</a>
+                <a href="#" class="header__popup-item">Служба поддержки</a>
+                <button class="button header__btn header__popup-btn">Войти</button>
+            </div>
+        </div>
+    </section>
+    <main class="main">
+        <section class="paying">
+            <div class="container">
+                <div class="paying__title">Здесь можно оплатить</div>
+                <div class="paying__forms">
+                    <a href="#penalties" class="paying__form">Штрафы и пошлины ГИБДД</a>
+                    <a href="#credits" class="paying__form">Судебные задолженности</a>
+                    <a href="#tax" class="paying__form">Налоги</a>
+                    <a href="#service" class="paying__form">Услуги Росреестра</a>
+                    <span class="paying__form">и другие услуги</span>
+                </div>
+            </div>
+            <a href="#" class="paying__share">
+                <img src="img/main/share.png" alt="Share">
+                <div class="ya-share2" data-services="vkontakte,facebook,odnoklassniki,telegram"></div>
+            </a>
+        </section>
+        <section class="penalty" id="penalties">
+            <div class="container">
+                <div class="penalty-wrap">
+                    <div class="penalty__info">
+                        <div class="penalty__title">Штрафы ГИБДД</div>
+                        <p class="penalty__text">Для поиска укажите номера водительского удостоверения и свидетельства
+                            о регистрации ТС или номер штрафа.</p>
+                        <p class="penalty__text">Если у вас есть на руках постановление о штрафе, вы можете указать
+                            реквизиты самостоятельно.</p>
+                        <div class="penalty__warn">платить Вовремя — дешевле!</div>
+                        <p class="penalty__text-width">В первые 20 дней после выдачи постановления штраф можно оплатить
+                            со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном кабинете.
+                        </p>
+                        <a href="#" class="penalty__link">Пошлины ГИБДД</a>
+                        <div class="penalty__link-description">Перейдите по <a href="#">ссылке</a>  и укажите вид пошлины и отделение
+                            ГИБДД, предоставляющее вам услугу.</div>
+                    </div>
+                    <img src="img/main/1.jpg" alt="Penalty" class="penalty__img">
+                </div>
+            </div>
+        </section>
+        <section class=" credit" id="credits">
+            <div class="container">
+                <div class="credit-wrap">
+                    <div class="credit__info">
+                        <div class="credit__title">Судебные задолженности</div>
+                        <p class="credit__text">Для поиска начислений в ГИС ГМП укажите документы: <br>
+                            паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+                        <p class="credit__text">Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+                        <div class="credit__warn">Удобно!</div>
+                        <p class="credit__text-width">Судебные задолженности можно погасить как сразу, так и по частям,
+                            комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном
+                            кабинете.
+                        </p>
+                    </div>
+                    <img src="img/main/2.jpg" alt="Credit" class="credit__img">
+                </div>
+            </div>
+        </section>
+        <section class="taxes" id="tax">
+            <div class="container">
+                <div class="taxes-wrap">
+                    <div class="taxes__info">
+                        <div class="taxes__title">Налоги</div>
+                        <p class="taxes__text">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                            Индекс налогового документа, усли у вас на руках есть квитанция.</p>
+                        <div class="taxes__warn">Важно!</div>
+                        <p class="taxes__text-width">Согласно законодательству РФ вы не можете оплачивать налоги
+                            за других физических лиц. Принимаются только платежи физических лиц.
+                        </p>
+                    </div>
+                    <img src="img/main/3.jpg" alt="taxes" class="taxes__img">
+                </div>
+            </div>
+        </section>
+        <section class="services" id="service">
+            <div class="container">
+                <div class="services-wrap">
+                    <div class="services__info">
+                        <div class="services__title">Услуги Росреестра</div>
+                        <p class="services__text">В поисковой строке укажите Код платежа, который был отправлен вам
+                            на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                        <div class="services__warn">Нет кода?</div>
+                        <p class="services__text-width">Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru
+                            и сформируйте запрос на оплату электронных услуг Росреестра.
+                        </p>
+                    </div>
+                    <img src="img/main/3.jpg" alt="services" class="services__img">
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+            <div class="container">
+                <div class="partners__title">С нами работают</div>
+                <div class="partners__list">
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner2.svg">
+                            <img src="img/main/partners/partner2.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Партнер 1
+                        </div>
+                    </div>
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner4.svg">
+                            <img src="img/main/partners/partner4.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Компания-партнер с длинным названием
+                        </div>
+                    </div>
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner3.svg">
+                            <img src="img/main/partners/partner3.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Партнер 3
+                        </div>
+                    </div>
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner2.svg">
+                            <img src="img/main/partners/partner2.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Название партнера 4
+                        </div>
+                    </div>
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner1.svg">
+                            <img src="img/main/partners/partner1.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Компания-партнер 5
+                        </div>
+                    </div>
+                    <div class="partners__info">
+                        <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner.svg">
+                            <img src="img/main/partners/partner.svg" alt="Partner">
+                        </object>
+                        <div class="partners__name">
+                            Партнер 6 с длинным названием
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <main class="main-small">
+        <section class="paying">
+            <div class="container">
+                <div class="paying__title">Узнайте, как оплатить</div>
+        </section>
+        <section class="accordeon penalty" id="penalties">
+            <div class="container">
+                <div class="accordeon__info">
+                    <div class="accord accordeon__head">
+                        <a href="#" class="penalty__title accordeon__title">Штрафы ГИБДД</a>
+                    </div>
+                    <div class="accordeon__text-wrap">
+                        <p class="penalty__text">Для поиска укажите номера водительского удостоверения
+                            и свидетельства
+                            о регистрации ТС или номер штрафа.</p>
+                        <p class="penalty__text">Если у вас есть на руках постановление о штрафе, вы можете указать
+                            реквизиты самостоятельно.</p>
+                        <div class="penalty__warn">платить Вовремя — дешевле!</div>
+                        <p class="penalty__text-width">В первые 20 дней после выдачи постановления штраф можно
+                            оплатить
+                            со скидкой 50%. Для своевременной оплаты штрафов настройте уведомления в Личном
+                            кабинете.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accordeon fee" id="fees">
+            <div class="container">
+                <div class="accordeon__info">
+                    <div class="accord accordeon__head">
+                        <a href="#" class="fee__title accordeon__title ">Пошлины ГИБДД</a>
+                    </div>
+                    <div class="accordeon__text-wrap">
+                        <p class="penalty__link-description">Перейдите по <a href="#">ссылке</a> и укажите вид пошлины и отделение
+                            ГИБДД, предоставляющее вам услугу.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accordeon credit" id="credits">
+            <div class="container">
+                <div class="accordeon__info">
+                    <div class="accord accordeon__head">
+                        <a href="#" class="credit__title accordeon__title ">Судебные задолженности</a>
+                    </div>
+                    <div class="accordeon__text-wrap">
+                        <p class="credit__text">Для поиска начислений в ГИС ГМП укажите документы: <br>
+                            паспорт РФ, ИНН, СНИЛС или номер Исполнительного производства</p>
+                        <p class="credit__text">Вы можете указать реквизиты платежа самостоятельно, заполнив форму.</p>
+                        <div class="credit__warn">Удобно!</div>
+                        <p class="credit__text-width">Судебные задолженности можно погасить как сразу, так и по частям,
+                            комфортными для вас платежами. Информацию о совершенных платежах сохраняйте в Личном
+                            кабинете.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accordeon tax" id="penalties">
+            <div class="container">
+                <div class="accordeon__info">
+                    <div class="accord accordeon__head">
+                        <a href="#" class="tax__title accordeon__title ">Налоги</a>
+                    </div>
+                    <div class="accordeon__text-wrap">
+                        <p class="taxes__text">Для поиска начислений по налогам в ГИС ГМП укажите ИНН или
+                            Индекс налогового документа, усли у вас на руках есть квитанция.</p>
+                        <div class="taxes__warn">Важно!</div>
+                        <p class="taxes__text-width">Согласно законодательству РФ вы не можете оплачивать налоги
+                            за других физических лиц. Принимаются только платежи физических лиц.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="accordeon services" id="penalties">
+            <div class="container">
+                <div class="accordeon__info">
+                    <div class="accord accordeon__head">
+                        <a href="#" class="services__title accordeon__title ">Услуги Росреестра</a>
+                    </div>
+                    <div class="accordeon__text-wrap">
+                        <p class="services__text">В поисковой строке укажите Код платежа, который был отправлен вам
+                            на почтовый ящик, указанный при подаче запроса в Росреестре.</p>
+                        <div class="services__warn">Нет кода?</div>
+                        <p class="services__text-width">Если у вас еще нет кода платежа, перейдите на сайт rosreestr.ru
+                            и сформируйте запрос на оплату электронных услуг Росреестра.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="partners">
+                <div class="container">
+                    <div class="partners__title">С нами работают</div>
+                    <div class="partners__list">
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner5.svg">
+                                <img src="img/main/partners/partner5.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Партнер 1
+                            </div>
+                        </div>
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner4.svg">
+                                <img src="img/main/partners/partner4.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Компания-партнер с длинным названием
+                            </div>
+                        </div>
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner3.svg">
+                                <img src="img/main/partners/partner3.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Партнер 3
+                            </div>
+                        </div>
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner2.svg">
+                                <img src="img/main/partners/partner2.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Название партнера 4
+                            </div>
+                        </div>
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner1.svg">
+                                <img src="img/main/partners/partner1.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Компания-партнер 5
+                            </div>
+                        </div>
+                        <div class="partners__info">
+                            <object class="partners__img" type="image/svg+xml" data="img/main/partners/partner.svg">
+                                <img src="img/main/partners/partner.svg" alt="Partner">
+                            </object>
+                            <div class="partners__name">
+                                Партнер 6 с длинным названием
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-wrap">
+            <div class="footer__rights">
+                <div class="footer__years"> &copy; 2012-2018</div>
+                <div class="footer__firmname">ООО "Название Компании"</div>
+                <div class="footer__secure">
+                    <object class="footer__secure-img" type="image/svg+xml" data="img/footer/secure.svg">
+                        <img src="img/footer/secure.svg" alt="Secure">
+                    </object>
+                </div>
+            </div>
+            <div class="footer__links">
+                <a href="#" class="footer__link">О сервисе</a>
+                <a href="#" class="footer__link">Способы оплаты</a>
+                <a href="#" class="footer__link">Как это работает</a>
+                <a href="#" class="footer__link">Партнерам</a>
+                <a href="#" class="footer__link">Статьи и новости</a>
+            </div>
+            <div class="footer__contacts">
+                <a class="footer__phone" href="tel:+88001234567">8 800 123 4567</a>
+                <small class="footer__phone-info">звонок по России бесплатный</small>
+                <a href="#" class="footer__feedback">Обратная связь</a>
+                <a href="#" class="footer__vk">Мы вКонтакте</a>
+            </div>
+            <div class="footer__additions">
+                <div class="footer__additions-info">
+                    <p>Дополнительные ссылки</p> и копирайты ООО «Фирма 2»
+                </div>
+                <div class="footer__additions-firm">
+                    <div class="footer__firm">
+                        <object class="footer__firm-img" type="image/svg+xml" data="img/footer/firm.svg">
+                            <img src="img/footer/firm.svg" alt="Firm">
+                        </object>
+                    </div>
+                </div>
+                <a href="#" class="paying__share-media">
+                    <img src="img/main/share.png" alt="Share">
+                    <div class="pluso" data-background="transparent"
+                        data-options="small,square,line,horizontal,nocounter,theme=01"
+                        data-services="vkontakte,odnoklassniki,facebook"></div>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="https://yastatic.net/es5-shims/0.0.2/es5-shims.min.js"></script>
+    <script src="https://yastatic.net/share2/share.js"></script>
+    <script type="text/javascript"></script>
+</body>
+
+</html>

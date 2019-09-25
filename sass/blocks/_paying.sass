@@ -1,0 +1,96 @@
+.paying
+    position: relative
+    margin-bottom: 85px
+    a
+        outline: 0
+    &__title
+        font-size: 36px
+        color: $black-color
+        margin: 40px 0px 17px
+        text-align: center
+        letter-spacing: normal
+        @include font-bold
+
+    &__forms
+        display: flex
+        justify-content: center
+        text-align: center
+        flex-wrap: wrap
+        max-width: 690px
+        margin: 0 auto
+        span
+            border: none
+            color: $black-color
+    &__form
+        font-size: 18px
+        margin: 16px 20px 0 0
+        border-bottom: 1.3px dotted $main-color
+        color: $main-color
+    &__share
+        position: fixed
+        right: 80px
+        bottom: 240px
+        &-media
+            display: none
+.ya-share2
+        display: none
+        position: fixed
+        right: 40px
+        margin-top: 10px
+
+@media (max-width: 991px)
+ .paying
+    position: relative
+    margin-bottom: 85px
+    a
+        outline: 0
+    &__title
+        font-size: 36px
+        color: $black-color
+        margin: 40px 0px 20px
+        text-align: center
+        letter-spacing: normal
+        @include font-bold
+
+    &__forms
+        display: flex
+        justify-content: center
+        text-align: center
+        flex-wrap: wrap
+        max-width: 690px
+        margin: 0 auto
+        span
+            border: none
+            color: $black-color
+    &__form
+        font-size: 18px
+        margin: 15px 20px 0 0
+        border-bottom: 1.3px dotted $main-color
+        color: $main-color
+    &__share
+        display: none
+        position: fixed
+        right: 80px
+        bottom: 40px
+        &-media
+            margin-top: 20px
+            display: block
+.ya-share2_inited
+    position: fixed
+
+@media (max-width: 520px)
+    .paying
+        &__share
+            &-media
+                margin-top: 70px
+                img
+                    position: absolute
+                    right: 20px
+                    bottom: 55px
+                .pluso
+                    display: inline-block
+                    position: absolute
+                    bottom: 25px
+                    right: 20px
+
+
